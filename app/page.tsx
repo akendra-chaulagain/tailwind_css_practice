@@ -1,8 +1,12 @@
-"use client";
-import React from "react";
+import Topbar from '@/components/Topbar'
+import React from 'react'
 
 const page = () => {
-  return <div className="bg-cyan-800 h-10">page</div>;
-};
+  return (
+   <>
+   <Topbar />
+   </>
+  )
+}
 
-export default page;
+export default page

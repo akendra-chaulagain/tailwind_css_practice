@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 /* @import "tailwindcss"; */
+body {
+  margin: 0.2% 10% 0.5% 10%;
+}
