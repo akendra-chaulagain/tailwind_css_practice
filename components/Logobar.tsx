@@ -11,7 +11,7 @@ import Image from "next/image";
 const Logobar = () => {
   return (
     <>
-      <div className=" h-auto mt-[25px]">
+      <div className=" h-auto mt-[25px] px-[10px]">
         <div className="grid grid-cols-3 gap-2 text-[15px]  text-gray-500">
           <div className="  ">
             {/* location */}
