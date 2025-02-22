@@ -1,18 +1,12 @@
 import React from "react";
-import {
-  CreditCard,
-  Navigation2,
-  Search,
-  ShoppingCart,
-  User,
-} from "lucide-react";
+import { CreditCard, MapPin, Search, ShoppingCart, User } from "lucide-react";
 import Image from "next/image";
 
 const Logobar = () => {
   return (
     <>
       <div className=" h-auto mt-[25px] px-[10px]">
-        <div className="grid grid-cols-3 gap-2 text-[15px]  text-gray-500">
+        <div className="grid grid-cols-3 gap-2 text-[15px]  text-gray-700">
           <div className="  ">
             {/* location */}
             <div className="flex">
@@ -23,8 +17,8 @@ const Logobar = () => {
                 <span className="ml-[5px]">Scotia Bank Card</span>
               </div>
               <div className="flex cursor-pointer">
-                <span>
-                  <Navigation2 />
+                <span className="">
+                  <MapPin />
                 </span>
                 <span className="ml-[5px]">Store Locator</span>
               </div>
