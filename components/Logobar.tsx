@@ -6,51 +6,69 @@ import {
   ShoppingCart,
   User,
 } from "lucide-react";
+import Image from "next/image";
 
 const Logobar = () => {
   return (
     <>
-      <div className="bg-red-200 h-auto">
-        <div className="grid grid-cols-3 gap-2">
-          <div className="bg-red-700">
-            <div>
-              <div>
+      <div className=" h-auto mt-[25px]">
+        <div className="grid grid-cols-3 gap-2 text-[15px]  text-gray-500">
+          <div className="  ">
+            {/* location */}
+            <div className="flex">
+              <div className="flex cursor-pointer mr-[30px]">
                 <span>
-                  {" "}
                   <CreditCard />
-                  Scotia Bank Card
                 </span>
+                <span className="ml-[5px]">Scotia Bank Card</span>
               </div>
-              <div>
+              <div className="flex cursor-pointer">
                 <span>
                   <Navigation2 />
                 </span>
-                <span>Store Location</span>
+                <span className="ml-[5px]">Store Locator</span>
               </div>
             </div>
           </div>
-          <div className="bg-red-800">Image</div>
-          <div className="bg-red-900">
-            <div>
+          {/* logo */}
+          <div className="flex justify-center">
+            <Image
+              src="/images/logo.svg"
+              alt="logo"
+              width={250}
+              height={250}
+              className="cursor-pointer"
+            />
+          </div>
+
+          {/* search */}
+          <div className="flex justify-between">
+            <div className="flex  border border-gray-500 px-[13px] py-[4px]">
               <span>
-                <input type="text" />
+                <input
+                  id="search"
+                  name="search"
+                  type="text"
+                  placeholder="Search"
+                  className="outline-none"
+                />
               </span>
 
-              <span>
+              <span className="cursor-pointer">
                 <Search />
               </span>
             </div>
-            <div>
-              <span>Sign in</span>
+            <div className="flex cursor-pointer">
               <span>
                 <User />
               </span>
+              <span className="ml-[7px] hover:underline">Sign in</span>
             </div>
-            <div>
+            <div className="flex cursor-pointer">
               <span>
                 <ShoppingCart />
               </span>
-              <span>Bag (0)</span>
+              <span className="ml-[7px] hover:underline">Bag (0)</span>
             </div>
           </div>
         </div>
