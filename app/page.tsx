@@ -1,5 +1,6 @@
 import Category from "@/components/Category";
 import Logobar from "@/components/Logobar";
+import Product from "@/components/Product";
 import Navbar from "@/components/Navbar";
 import Semi_cat from "@/components/Semi_cat";
 import Topbar from "@/components/Topbar";
@@ -13,6 +14,8 @@ const page = () => {
       <Navbar />
       <Category />
       <Semi_cat />
+      <Product />
+      
     </>
   );
 };

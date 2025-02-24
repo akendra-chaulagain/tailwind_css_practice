@@ -4,7 +4,7 @@ import React from "react";
 const Semi_cat = () => {
   return (
     <>
-      <div className="grid grid-cols-6 mt-[25px] gap-4 px-7">
+      <div className="grid grid-cols-6 mt-[25px] gap-4 px-7 mb-[25px]">
         <div className="gap-0">
           <Image
             src="/images/semicat/s1.webp"
