@@ -1,33 +1,45 @@
+"use client";
 import { Star } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import Category from "../category.json";
 
 const Product = () => {
   return (
     <>
-      <div className="grid grid-cols-6 mt-[50px]">
-        <div className="cursor-pointer">
-          <Image
-            src="/images/semicat/s1.webp"
-            alt="logo"
-            width={250}
-            height={100}
-            className=" object-cover cursor-pointer"
-          />
-          <h3 className="font-semibold text-[24px] text-red-800">$399.00</h3>
-          <p className="text-[19px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit....
-          </p>
-          <div className="flex">
-            <span className="flex mt-[6px]">
-              <Star />
-              <Star />
-              <Star />
-              <Star />
-              <Star />
-            </span>
-            <span className="ml-[5px]">23</span>
-          </div>
+      <div className="mt-[100px] mb-[400px]">
+        <h1 className="flex justify-center font-semibold text-[27px] mb-[20px] tracking-wide text-[#848383]">
+          OUR PRODUCTS
+        </h1>
+        <div className="grid grid-cols-6 ">
+          {Category.map((data) => (
+            <div
+              key={data.id}
+              className="cursor-pointer border-2 border-[#f2f2f2] p-4 rounded"
+            >
+              <Image
+                src={data.photo}
+                alt="logo"
+                width={300}
+                height={100}
+                className=" object-fill cursor-pointer ml-[6px]"
+              />
+              <h3 className="font-semibold text-[21px] text-red-800 ml-[6px]">
+                ${data.price}
+              </h3>
+              <p className="text-[17px] ml-[6px]">{data.p}</p>
+              <div className="flex ml-[6px]">
+                <span className="flex mt-[6px] mb-[10px]">
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                  <Star />
+                </span>
+                <span className="ml-[5px]">23</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>
