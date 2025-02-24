@@ -45,7 +45,7 @@ const Category = () => {
               alt="h3"
               width={1000}
               height={1000}
-              className="w-full h-full object-cover"
+              className=" h-[88.7vh]  object-cover"
             />
 
             <button className="absolute translate-x-[-50%] left-1/2 top-1/2 bg-slate-200 px-[10px] py-[3px] opacity-90 hover:bg-white">

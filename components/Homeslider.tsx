@@ -12,7 +12,7 @@ const Homeslider = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrow: true,
-    dots:true
+    dots: true,
   };
 
   return (
@@ -28,15 +28,6 @@ const Homeslider = () => {
           </p>
         </div>
         <Slider {...settings}>
-          {/* <div>
-            <Image
-              src="/images/product/p1.webp"
-              alt="Image 1"
-              className="w-full h-auto"
-              width={300}
-              height={100}
-            />
-          </div> */}
           {product.map((data) => (
             <div
               key={data.id}
