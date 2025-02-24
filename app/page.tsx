@@ -1,6 +1,7 @@
 import Category from "@/components/Category";
 import Logobar from "@/components/Logobar";
 import Navbar from "@/components/Navbar";
+import Semi_cat from "@/components/Semi_cat";
 import Topbar from "@/components/Topbar";
 import React from "react";
 
@@ -11,6 +12,7 @@ const page = () => {
       <Logobar />
       <Navbar />
       <Category />
+      <Semi_cat />
     </>
   );
 };

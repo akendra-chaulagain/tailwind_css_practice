@@ -1,0 +1,105 @@
+import Image from "next/image";
+import React from "react";
+
+const Semi_cat = () => {
+  return (
+    <>
+      <div className="grid grid-cols-6 mt-[25px] gap-4 px-7">
+        <div className="gap-0">
+          <Image
+            src="/images/semicat/s1.webp"
+            alt="logo"
+            width={400}
+            height={0}
+            className=" w-full h-full object-cover cursor-pointer"
+          />
+
+          <span
+            className="flex justify-center font-bold underline mt-[6px]
+          cursor-pointer hover:text-red-800"
+          >
+            SHIRTS
+          </span>
+        </div>
+        <div>
+          <Image
+            src="/images/semicat/s2.jpg"
+            alt="logo"
+            width={400}
+            height={0}
+            className=" w-full h-full object-cover cursor-pointer"
+          />
+
+          <span
+            className="flex justify-center font-bold underline mt-[6px]
+          cursor-pointer hover:text-red-800"
+          >
+            PANTS
+          </span>
+        </div>
+        <div>
+          <Image
+            src="/images/semicat/s3.jpg"
+            alt="logo"
+            width={400}
+            height={0}
+            className=" w-full h-full object-cover cursor-pointer"
+          />
+          <span
+            className="flex justify-center font-bold underline mt-[6px]
+          cursor-pointer hover:text-red-800"
+          >
+            SWEATERS
+          </span>
+        </div>
+        <div>
+          <Image
+            src="/images/semicat/s4.webp"
+            alt="logo"
+            width={400}
+            height={0}
+            className=" w-full h-full object-cover cursor-pointer"
+          />
+          <span
+            className="flex justify-center font-bold underline mt-[6px]
+          cursor-pointer hover:text-red-800"
+          >
+            JEANS
+          </span>
+        </div>
+        <div>
+          <Image
+            src="/images/semicat/s5.webp"
+            alt="logo"
+            width={400}
+            height={0}
+            className=" w-full h-full object-cover cursor-pointer"
+          />
+          <span
+            className="flex justify-center font-bold underline mt-[6px]
+          cursor-pointer hover:text-red-800"
+          >
+            TEES & KNITS
+          </span>
+        </div>
+        <div>
+          <Image
+            src="/images/semicat/s6.webp"
+            alt="logo"
+            width={400}
+            height={0}
+            className=" w-full h-full object-cover cursor-pointer"
+          />
+          <span
+            className="flex justify-center font-bold underline mt-[6px]
+          cursor-pointer hover:text-red-800"
+          >
+            DRESSES
+          </span>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Semi_cat;
