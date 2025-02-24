@@ -9,7 +9,7 @@ import Link from "next/link";
 const Filter = () => {
   return (
     <>
-      <div className=" mr-[25px] w-[100%]">
+      <div className=" mr-[25px] w-full">
         <hr />
         <Collapsible>
           <CollapsibleTrigger className=" py-[14px]">
@@ -190,7 +190,7 @@ const Filter = () => {
               FABRIC
             </p>
           </CollapsibleTrigger>
-          <CollapsibleContent className="flex flex-col text-[16px] mb-[5px] gap-3 ">
+          <CollapsibleContent className="flex flex-col text-[16px] mb-[5px] gap-3">
             <Link className=" hover:text-red-800" href="/">
               View All{" "}
             </Link>

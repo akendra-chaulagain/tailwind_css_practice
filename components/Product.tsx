@@ -1,8 +1,9 @@
 "use client";
-import { Star } from "lucide-react";
+import { ShoppingCart, Star } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import Category from "../category.json";
+import { Button } from "./ui/button";
 
 const Product = () => {
   return (
@@ -11,7 +12,7 @@ const Product = () => {
         <h1 className="flex justify-center font-semibold text-[27px] mb-[20px] tracking-wide text-[#adb5bd]">
           #OUR PRODUCTS
         </h1>
-        <div className="grid grid-cols-6">
+        <div className="grid grid-cols-3">
           {Category.map((data) => (
             <div
               key={data.id}
@@ -20,24 +21,31 @@ const Product = () => {
               <Image
                 src={data.photo}
                 alt="logo"
-                width={300}
+                width={700}
                 height={100}
-                className=" object-fill cursor-pointer ml-[6px]"
+                className=" flex justify-center object-fill cursor-pointer "
               />
-              <h3 className="font-semibold text-[21px] text-red-800 ml-[6px]">
+              <h3 className="font-semibold text-[21px] text-red-600 ml-[6px]">
                 ${data.price}
               </h3>
-              <p className="text-[17px] ml-[6px]">{data.p}</p>
+              <p className="text-[16px] ml-[6px]">{data.p}</p>
               <div className="flex ml-[6px]">
                 <span className="flex mt-[6px] mb-[10px]">
-                  <Star />
-                  <Star />
-                  <Star />
-                  <Star />
-                  <Star />
+                  <Star size={15} color="red" />
+                  <Star size={15} color="red" />
+                  <Star size={15} color="red" />
+                  <Star size={15} color="red" />
+                  <Star size={15} color="red" />
                 </span>
                 <span className="ml-[5px]">23</span>
               </div>
+
+              <Button
+                variant="outline"
+                className="bg-red-600 text-white text-[15px] mt-[10px]"
+              >
+                Add to Cart <ShoppingCart size={16} />
+              </Button>
             </div>
           ))}
         </div>

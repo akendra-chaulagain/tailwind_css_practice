@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
 import Filter from "./components/Filter";
+import Items from "./components/Items";
 
 const page = () => {
   return (
@@ -50,13 +51,12 @@ const page = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-5 ">
+        <div className="grid grid-cols-5 gap-4">
           {/* filter components  */}
           <Filter />
 
           <div className="col-span-4  h-full w-full">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
-            debitis.
+            <Items />
           </div>
         </div>
       </div>
