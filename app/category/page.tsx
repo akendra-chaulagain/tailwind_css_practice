@@ -9,22 +9,21 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
+import Filter from "./components/Filter";
 
 const page = () => {
   return (
     <>
       <div className="mt-[45px] px-[30px]">
         {/* category name */}
-
         <p className="flex justify-center text-gray-500">Clothing /</p>
         <h1 className="flex justify-center text-[30px] font-semibold mt-[4px]">
           CLOTHING
         </h1>
-
         {/* filter section */}
         <div className="grid  grid-cols-2">
           <div>
-            <h2 className="text-[20px] font-semibold">FILTERS</h2>
+            <h2 className="text-[23px] font-semibold">FILTERS</h2>
           </div>
           {/* dropdown filter */}
           <div className="flex justify-end">
@@ -48,6 +47,16 @@ const page = () => {
                 <ChevronDown />
               </span>
             </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-5 ">
+          {/* filter components  */}
+          <Filter />
+
+          <div className="col-span-4  h-full w-full">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
+            debitis.
           </div>
         </div>
       </div>
