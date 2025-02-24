@@ -6,7 +6,7 @@ const Semi_cat = () => {
     <>
       <div className="mt-[50px]  mb-[25px]">
         <h1 className="flex justify-center font-semibold text-[30px] mb-[20px] tracking-wide text-[#848383]">
-          OUR CATEGORY
+          #OUR CATEGORY
         </h1>
         <div className="grid grid-cols-6 mt-[25px] gap-4 px-7 mb-[25px]">
           <div className="gap-0">

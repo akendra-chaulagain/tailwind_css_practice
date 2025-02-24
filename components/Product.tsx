@@ -7,15 +7,15 @@ import Category from "../category.json";
 const Product = () => {
   return (
     <>
-      <div className="mt-[100px] mb-[400px]">
-        <h1 className="flex justify-center font-semibold text-[27px] mb-[20px] tracking-wide text-[#848383]">
-          OUR PRODUCTS
+      <div className="mt-[100px] mb-[40px] ">
+        <h1 className="flex justify-center font-semibold text-[27px] mb-[20px] tracking-wide text-[#adb5bd]">
+          #OUR PRODUCTS
         </h1>
-        <div className="grid grid-cols-6 ">
+        <div className="grid grid-cols-6">
           {Category.map((data) => (
             <div
               key={data.id}
-              className="cursor-pointer border-2 border-[#f2f2f2] p-4 rounded"
+              className="cursor-pointer border-2 border-[#f2f2f2] p-4 rounded "
             >
               <Image
                 src={data.photo}
