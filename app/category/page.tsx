@@ -11,6 +11,7 @@ import {
 import { ChevronDown } from "lucide-react";
 import Filter from "./components/Filter";
 import Items from "./components/Items";
+// import Link from "next/link";
 
 const page = () => {
   return (
@@ -31,9 +32,14 @@ const page = () => {
             <p className="flex items-center mr-[10px]">
               Showing <span className="font-bold mx-[5px]"> 2,682 </span> items
             </p>
-            <div className="flex border-2 border-black py-[5px] pl-[25px] pr-[5px]">
+            <div className="fx]">
               <DropdownMenu>
-                <DropdownMenuTrigger>Select</DropdownMenuTrigger>
+                <DropdownMenuTrigger className="flex border-2 border-gray-300 py-[5px] pl-[15px] pr-[5px]">
+                  <span>Select</span>
+                  <span className="ml-[30px] text-gray-400">
+                    <ChevronDown />
+                  </span>
+                </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuLabel>Newest</DropdownMenuLabel>
                   <DropdownMenuSeparator />
@@ -44,9 +50,6 @@ const page = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
               {/* arrow */}
-              <span className="ml-[30px]">
-                <ChevronDown />
-              </span>
             </div>
           </div>
         </div>
@@ -56,6 +59,9 @@ const page = () => {
           <Filter />
 
           <div className="col-span-4  h-full w-full">
+            {/* <Link href="/category/1">
+              <Items />
+            </Link> */}
             <Items />
           </div>
         </div>

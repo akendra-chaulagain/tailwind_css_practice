@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Slider from "react-slick";
 import product from "../product.json";
+import Slider from "react-slick";
 
 const Homeslider = () => {
   const settings = {

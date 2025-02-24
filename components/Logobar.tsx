@@ -1,6 +1,7 @@
 import React from "react";
 import { CreditCard, MapPin, Search, ShoppingCart, User } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Logobar = () => {
   return (
@@ -20,19 +21,24 @@ const Logobar = () => {
                 <span className="">
                   <MapPin />
                 </span>
-                <span className="ml-[5px]">Store Locator</span>
+                <Link href={""} className="ml-[5px]">
+                  Store Locator
+                </Link>
               </div>
             </div>
           </div>
           {/* logo */}
           <div className="flex justify-center">
-            <Image
-              src="/images/logo.svg"
-              alt="logo"
-              width={250}
-              height={250}
-              className="cursor-pointer"
-            />
+            <Link href={"/"}>
+              {" "}
+              <Image
+                src="/images/logo.svg"
+                alt="logo"
+                width={250}
+                height={250}
+                className="cursor-pointer"
+              />
+            </Link>
           </div>
 
           {/* search */}
@@ -62,7 +68,7 @@ const Logobar = () => {
               <span>
                 <ShoppingCart />
               </span>
-              <span className="ml-[7px] hover:underline">Bag (0)</span>
+              <span className="ml-[7px] hover:underline">Cart (0)</span>
             </div>
           </div>
         </div>

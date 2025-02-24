@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Topbar = () => {
@@ -9,11 +10,16 @@ const Topbar = () => {
             25% DISCOUNT ON SCOTIA CREDIT CARD!
           </div>
           <div className="cursor-pointer text-[#c1c1c1]">
-            <button className="underline mr-[7px] hover:text-white">
+            <Link
+              href="/category"
+              className="underline mr-[7px] hover:text-white"
+            >
               SHOP NOW
-            </button>
+            </Link>
             <span className="mr-[7px] ">|</span>
-            <button className="underline hover:text-white">DETAILS</button>
+            <Link href="/category" className="underline hover:text-white">
+              DETAILS
+            </Link>
           </div>
         </div>
       </div>

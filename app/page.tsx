@@ -12,9 +12,8 @@ const page = () => {
     <>
       <Category />
       <Semi_cat />
-
-      <Homeslider />
       <Product />
+      <Homeslider />
     </>
   );
 };

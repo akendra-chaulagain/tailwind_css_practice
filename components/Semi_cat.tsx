@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Semi_cat = () => {
@@ -10,96 +11,108 @@ const Semi_cat = () => {
         </h1>
         <div className="grid grid-cols-6 mt-[25px] gap-4 px-7 mb-[25px]">
           <div className="gap-0">
-            <Image
-              src="/images/semicat/s1.webp"
-              alt="logo"
-              width={400}
-              height={0}
-              className=" w-full h-full object-cover cursor-pointer"
-            />
+            <Link href={"/category"}>
+              <Image
+                src="/images/semicat/s1.webp"
+                alt="logo"
+                width={400}
+                height={0}
+                className=" w-full h-full object-cover cursor-pointer"
+              />
 
-            <span
-              className="flex justify-center font-bold underline mt-[6px]
+              <span
+                className="flex justify-center font-bold underline mt-[6px]
           cursor-pointer hover:text-red-800"
-            >
-              SHIRTS
-            </span>
+              >
+                SHIRTS
+              </span>
+            </Link>
           </div>
           <div>
-            <Image
-              src="/images/semicat/s2.jpg"
-              alt="logo"
-              width={400}
-              height={0}
-              className=" w-full h-full object-cover cursor-pointer"
-            />
+            <Link href={"/category"}>
+              <Image
+                src="/images/semicat/s2.jpg"
+                alt="logo"
+                width={400}
+                height={0}
+                className=" w-full h-full object-cover cursor-pointer"
+              />
 
-            <span
-              className="flex justify-center font-bold underline mt-[6px]
+              <span
+                className="flex justify-center font-bold underline mt-[6px]
           cursor-pointer hover:text-red-800"
-            >
-              PANTS
-            </span>
+              >
+                PANTS
+              </span>
+            </Link>
           </div>
           <div>
-            <Image
-              src="/images/semicat/s3.jpg"
-              alt="logo"
-              width={400}
-              height={0}
-              className=" w-full h-full object-cover cursor-pointer"
-            />
-            <span
-              className="flex justify-center font-bold underline mt-[6px]
+            <Link href={"/category"}>
+              <Image
+                src="/images/semicat/s3.jpg"
+                alt="logo"
+                width={400}
+                height={0}
+                className=" w-full h-full object-cover cursor-pointer"
+              />
+              <span
+                className="flex justify-center font-bold underline mt-[6px]
           cursor-pointer hover:text-red-800"
-            >
-              SWEATERS
-            </span>
+              >
+                SWEATERS
+              </span>
+            </Link>
           </div>
           <div>
-            <Image
-              src="/images/semicat/s4.webp"
-              alt="logo"
-              width={400}
-              height={0}
-              className=" w-full h-full object-cover cursor-pointer"
-            />
-            <span
-              className="flex justify-center font-bold underline mt-[6px]
+            <Link href={"/category"}>
+              <Image
+                src="/images/semicat/s4.webp"
+                alt="logo"
+                width={400}
+                height={0}
+                className=" w-full h-full object-cover cursor-pointer"
+              />
+              <span
+                className="flex justify-center font-bold underline mt-[6px]
           cursor-pointer hover:text-red-800"
-            >
-              JEANS
-            </span>
+              >
+                JEANS
+              </span>
+            </Link>
           </div>
           <div>
-            <Image
-              src="/images/semicat/s5.webp"
-              alt="logo"
-              width={400}
-              height={0}
-              className=" w-full h-full object-cover cursor-pointer"
-            />
-            <span
-              className="flex justify-center font-bold underline mt-[6px]
+            <Link href={"/category"}>
+              <Image
+                src="/images/semicat/s5.webp"
+                alt="logo"
+                width={400}
+                height={0}
+                className=" w-full h-full object-cover cursor-pointer"
+              />
+              <span
+                className="flex justify-center font-bold underline mt-[6px]
           cursor-pointer hover:text-red-800"
-            >
-              TEES & KNITS
-            </span>
+              >
+                TEES & KNITS
+              </span>
+            </Link>
           </div>
           <div>
-            <Image
-              src="/images/semicat/s6.webp"
-              alt="logo"
-              width={400}
-              height={0}
-              className=" w-full h-full object-cover cursor-pointer"
-            />
-            <span
-              className="flex justify-center font-bold underline mt-[6px]
+            <Link href={"/category"}>
+              <Image
+                src="/images/semicat/s6.webp"
+                alt="logo"
+                width={400}
+                height={0}
+                className=" w-full h-full object-cover cursor-pointer"
+              />
+              <span
+                className="flex justify-center font-bold underline mt-[6px]
           cursor-pointer hover:text-red-800"
-            >
-              DRESSES
-            </span>
+              >
+                DRESSES
+              </span>
+            </Link>
           </div>
         </div>
       </div>
