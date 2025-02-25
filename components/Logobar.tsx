@@ -68,7 +68,7 @@ const Logobar = () => {
               <span>
                 <ShoppingCart />
               </span>
-              <span className="ml-[7px] hover:underline">Cart (0)</span>
+              <span className="ml-[7px] hover:underline">Bag (0)</span>
             </div>
           </div>
         </div>

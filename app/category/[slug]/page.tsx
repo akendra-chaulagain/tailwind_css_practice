@@ -133,7 +133,7 @@ const page = () => {
         </h1>
 
         <div className="grid grid-cols-5 mt-[15px]">
-          {Category.slice(0,5).map((data) => (
+          {Category.slice(0, 5).map((data) => (
             <div
               key={data.id}
               className="cursor-pointer border-2 border-[#f2f2f2] p-4 rounded "
