@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Trash2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +12,7 @@ const page = () => {
           MY CART
         </h1>
 
-        <div className="grid grid-cols-6">
+        <div className="grid grid-cols-5 gap-4">
           <div
             className="col-span-4 gap-2  bg-[#f7f7f7] px-[30px] py-[30px]
  "
@@ -73,7 +74,6 @@ const page = () => {
             </div>
 
             {/* second item */}
-
             <div className="grid grid-cols-5  ">
               <div>
                 <Image
@@ -132,15 +132,38 @@ const page = () => {
             <hr className="mt-[20px]" />
             <div className="flex justify-end">
               <p>
-                Subtotal (1 item): <span className="font-bold text-[18px]">$1,249.00</span>{" "}
+                Subtotal (1 item):{" "}
+                <span className="font-bold text-[18px]">$1,249.00</span>{" "}
               </p>
             </div>
           </div>
+          {/* checkout */}
+          <div className=" bg-[#f7f7f7] px-[30px] py-[30px] h-[290px]">
+            <span className="text-red-600 text-[12px] ">
+              Your order qualifies for FREE shipping (excludes remote locations)
+            </span>
+            <hr />
+            <div className="flex justify-between mt-[10px] text-[17px]">
+              <div>
+                <h3>Items (2):</h3>
+                <h3>Shipping:</h3>
+                <h3>GST/HST:</h3>
+                <h3 className="font-semibold">Total:</h3>
+              </div>
+              <div>
+                <h3>$378.00</h3>
+                <h3>$48.59</h3>
+                <h3>$78.06</h3>
+                <h3 className="font-semibold">$541.88</h3>
+              </div>
+            </div>
 
-          {/* <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptatum, eligendi?
-          </div> */}
+            <div className="mt-[20px]">
+              <Button className="bg-red-600 text-white border-2 w-full hover:text-black hover:bg-white px-[40px] py-[25px]">
+                Proceed to Checkout
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </>

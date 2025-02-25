@@ -17,7 +17,7 @@ const Topbar = () => {
               SHOP NOW
             </Link>
             <span className="mr-[7px] ">|</span>
-            <Link href="/category" className="underline hover:text-white">
+            <Link href="/category/1" className="underline hover:text-white">
               DETAILS
             </Link>
           </div>

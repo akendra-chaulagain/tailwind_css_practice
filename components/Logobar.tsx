@@ -58,18 +58,18 @@ const Logobar = () => {
                 <Search />
               </span>
             </div>
-            <div className="flex cursor-pointer">
+            <Link href='/register' className="flex cursor-pointer">
               <span>
                 <User />
               </span>
               <span className="ml-[7px] hover:underline">Sign in</span>
-            </div>
-            <div className="flex cursor-pointer">
+            </Link>
+            <Link href='/cart' className="flex cursor-pointer">
               <span>
                 <ShoppingCart />
               </span>
               <span className="ml-[7px] hover:underline">Bag (0)</span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
