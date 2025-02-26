@@ -10,7 +10,7 @@ const Filter = () => {
   // div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"></div>
   return (
     <>
-      <div className=" mr-[25px] w-full">
+      <div className=" mr-[25px] w-full mb-[10px]">
         <hr />
         <Collapsible>
           <CollapsibleTrigger className=" py-[14px]">

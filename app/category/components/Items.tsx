@@ -7,10 +7,9 @@ import Link from "next/link";
 // import Link from "next/link";
 
 const Items = () => {
-  // div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"></div>
   return (
     <>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  mt-[15px]">
+      <div className="grid col-span-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 ml-[10px]">
         {/* <Link href='/category/1'>
         </Link> */}
         {Category.map((data) => (
