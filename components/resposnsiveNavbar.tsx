@@ -1,17 +1,53 @@
 import React from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Button } from "./ui/button";
-import { Menu } from "lucide-react";
+
+import { MapPin, Menu, ShoppingCart, User } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const resposnsiveBar = () => {
   return (
     <>
       <Sheet>
-        <SheetTrigger asChild>
-          <Button variant="outline">
-            <Menu />
-          </Button>
+        <SheetTrigger className="grid grid-cols-7 items-center bg-slate-300">
+          {/* menu button */}
+          <Menu size={30} />
+
+          {/* location icon */}
+          <div className="cursor-pointer">
+            <MapPin />
+          </div>
+          {/* logo */}
+          <div className=" col-span-3">
+            <Link href={"/"}>
+              {" "}
+              <Image
+                src="/images/logo.svg"
+                alt="logo"
+                width={130}
+                height={50}
+                className="cursor-pointer mr-[10px]"
+              />
+            </Link>
+          </div>
+
+          {/* login icons */}
+          <div>
+            <Link href="/register" className=" cursor-pointer">
+              <span>
+                <User />
+              </span>
+            </Link>
+          </div>
+          {/* cart */}
+          <div>
+            <Link href="/register" className="flex cursor-pointer">
+              <span>
+                <ShoppingCart />
+              </span>
+              <span className="ml-[7px] hover:underline">(0)</span>
+            </Link>
+          </div>
         </SheetTrigger>
         <SheetContent>
           <div>
@@ -19,7 +55,7 @@ const resposnsiveBar = () => {
             <div>
               <hr />
               <div className="my-[12px]">
-                <Link href="//" className=" font-bold text-[13px]">
+                <Link href="/" className=" font-bold text-[13px]">
                   Home
                 </Link>
               </div>

@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ResposnsiveBar from "@/components/resposnsiveBar";
+import ResposnsiveBar from "@/components/resposnsiveNavbar";
 
 const Category = () => {
   return (
-      // <div className="mt-[25px] px-[20px] text-[14px] font-bold  sm:hidden lg:block">
-
-
     <>
-      <div className=" lg:hidden">
+      {/* responsive bar */}
+      {/* <div className=" lg:hidden bg-red-800"> */}
         <ResposnsiveBar />
-      </div>
+      
+
+      {/* for bi display bigger than 1024px */}
 
       <span className="flex justify-center mt-[20px] text-red-700">
         Discount will appear in shopping bag. Exclusions apply
