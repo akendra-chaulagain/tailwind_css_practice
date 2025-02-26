@@ -4,7 +4,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <div className="mt-[25px] px-[20px] text-[14px] font-bold">
+      {/* <div className="mt-[25px] px-[20px] text-[14px] font-bold hidden md:block"> */}
+      <div className="mt-[25px] px-[20px] text-[14px] font-bold hidden md:block">
         <ul className="flex justify-between">
           <Link href='/' className=" cursor-pointer hover:underLinkne hover:text-red-800">
             Home

@@ -9,16 +9,17 @@ const Category = () => {
         Discount will appear in shopping bag. Exclusions apply
       </span>
 
-      <div className="grid grid-cols-4  text-[16px] mt-[35px]  w-full">
+      <div className="grid md:grid-cols-4  text-[16px] mt-[35px]   ">
         {/* LEFY SIDE CATEGORY */}
         <div className="">
-          <div className="relative text-center">
+          <div className="relative text-center ">
             <Link href={"/category"}>
               <Image
                 src="/images/homeCategory/h1.webp"
                 alt="h1"
                 width={400}
                 height={400}
+                className="md:mw-0"
               />
 
               <button className="absolute translate-x-[-50%] translate-y-[-50%] left-1/2 top-1/2 bg-slate-200 px-[10px] py-[3px] opacity-90 hover:bg-white">
