@@ -7,32 +7,34 @@ import React from "react";
 const page = () => {
   return (
     <>
+      {/* <div className="grid sm:grid-cols-1 md:grid-cols-1  grid-cols-1 lg:grid-cols-5"> */}
+
       <div className="mt-[45px] px-[30px] ">
         <h1 className="flex justify-center text-[30px] font-semibold my-[20px]">
           MY CART
         </h1>
 
-        <div className="grid grid-cols-5 gap-4">
+        <div className="grid sm:grid-cols-1 grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-4 mt-[20px]">
           <div
-            className="col-span-4 gap-2  bg-[#f7f7f7] px-[30px] py-[30px]
+            // className="col-span-3  gap-2  bg-[#f7f7f7]
+            className="col-span-3  gap-2  bg-[#f7f7f7] 
  "
           >
-            <div className="grid grid-cols-5">
-              <div>
+            {/* <div className="grid sm:grid-cols-5 lg:grid-cols-5  grid-cols-1 mb-[20px]  "> */}
+            <div className="grid sm:grid-cols-5 lg:grid-cols-5  grid-cols-2 mb-[20px]  ">
+              <div className="w-full max-w-lg mx-auto sm:flex sm:justify-center md:flex md:justify-center">
                 <Image
                   src="/images/product/1.webp"
                   alt="logo"
-                  width={170}
-                  height={100}
-                  className=" object-fill cursor-pointer "
+                  width={400}
+                  height={200}
+                  className=" object-cover cursor-pointer "
                 />
               </div>
               {/* items details */}
-              <div className="col-span-3">
+              <div className=" sm:col-span-3 ml-[30px]">
                 <h2 className="text-[17px] font-semibold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                  eveniet iusto cumque nisi laudantium voluptates cupiditate
-                  veritatis fugit....
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.....
                 </h2>
                 <span className="text-red-600 cursor-pointer text-[13px]">
                   In Stock
@@ -49,7 +51,7 @@ const page = () => {
 
                 {/* item counter */}
 
-                <div className="flex my-[20px]">
+                <div className="flex mt-[20px] mb-[10px]">
                   <div className="flex items-center gap-6 border-2 px-[16px] py-[3px]">
                     <span className=" cursor-pointer hover:text-red-600">
                       <Trash2 size={"19px"} />
@@ -66,30 +68,35 @@ const page = () => {
                 >
                   Product details
                 </Link>
+                <p className="text-[20px] mt-[10px] font-semibold sm:hidden sm:block ">
+                  $467.99
+                </p>
               </div>
-
+              {/* hidden md:block */}
               <div className="flex justify-center">
-                <p className="text-[20px] font-semibold">$467.99</p>
+                <p className="text-[20px] font-semibold sm:block hidden">
+                  {" "}
+                  $467.99
+                </p>
               </div>
             </div>
 
             {/* second item */}
-            <div className="grid grid-cols-5  ">
-              <div>
+
+            <div className="grid sm:grid-cols-5 lg:grid-cols-5  grid-cols-2 mb-[20px]  ">
+              <div className="w-full max-w-lg mx-auto sm:flex sm:justify-center md:flex md:justify-center">
                 <Image
-                  src="/images/product/p4.webp"
+                  src="/images/product/1.webp"
                   alt="logo"
-                  width={170}
-                  height={100}
-                  className=" object-fill cursor-pointer "
+                  width={400}
+                  height={200}
+                  className=" object-cover cursor-pointer "
                 />
               </div>
               {/* items details */}
-              <div className="col-span-3">
+              <div className=" sm:col-span-3 ml-[30px]">
                 <h2 className="text-[17px] font-semibold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                  eveniet iusto cumque nisi laudantium voluptates cupiditate
-                  veritatis fugit....
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.....
                 </h2>
                 <span className="text-red-600 cursor-pointer text-[13px]">
                   In Stock
@@ -106,7 +113,7 @@ const page = () => {
 
                 {/* item counter */}
 
-                <div className="flex my-[20px]">
+                <div className="flex mt-[20px] mb-[10px]">
                   <div className="flex items-center gap-6 border-2 px-[16px] py-[3px]">
                     <span className=" cursor-pointer hover:text-red-600">
                       <Trash2 size={"19px"} />
@@ -123,12 +130,21 @@ const page = () => {
                 >
                   Product details
                 </Link>
+                <p className="text-[20px] mt-[10px] font-semibold sm:hidden sm:block ">
+                  $467.99
+                </p>
               </div>
-
+              {/* hidden md:block */}
               <div className="flex justify-center">
-                <p className="text-[20px] font-semibold">$579.99</p>
+                <p className="text-[20px] font-semibold sm:block hidden">
+                  {" "}
+                  $467.99
+                </p>
               </div>
             </div>
+
+            {/* sub totel */}
+
             <hr className="mt-[20px]" />
             <div className="flex justify-end">
               <p>
