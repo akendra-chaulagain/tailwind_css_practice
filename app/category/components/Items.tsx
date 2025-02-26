@@ -9,7 +9,7 @@ import Link from "next/link";
 const Items = () => {
   return (
     <>
-      <div className="grid col-span-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 ml-[10px]">
+      <div className="grid col-span-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 ml-[10px]">
         {/* <Link href='/category/1'>
         </Link> */}
         {Category.map((data) => (

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 
 import Category from "@/category.json";
-import Link from "next/link";
+// import Link from "next/link";
 
 const page = () => {
   return (
@@ -22,22 +22,24 @@ const page = () => {
         {/* details grid */}
 
         <div className="mt-[25px]">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
             <div className="flex justify-center">
               <Image
                 src="/pd.webp"
                 alt="logo"
-                width={550}
+                width={400}
                 height={100}
-                className=" cursor-pointer"
+                className=" h-[70vh] cursor-pointer"
               />
             </div>
 
             {/* product Details */}
 
             <div>
-              <h1 className="text-[25px] font-bold flex justify-center mb-[18px]">
-                Open Knit Cable Crewneck Sweater
+              <h1 className="text-[25px] font-bold flex justify-center mb-[18px]    ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                sit similique corrupti eius soluta sunt optio repudiandae
+                repellat quisquam alias? Sed officia nemo perferendis.
               </h1>
               <div className="flex justify-between my-[20px]">
                 <span>Style # P251121032</span>
@@ -132,35 +134,33 @@ const page = () => {
           #You Might Also Like
         </h1>
 
-        <div className="grid grid-cols-5 mt-[15px]">
-          {Category.slice(0, 5).map((data) => (
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+          {Category.map((data) => (
             <div
               key={data.id}
               className="cursor-pointer border-2 border-[#f2f2f2] p-4 rounded "
             >
-              <Link href="/category/1">
-                <Image
-                  src={data.photo}
-                  alt="logo"
-                  width={300}
-                  height={100}
-                  className=" object-fill cursor-pointer ml-[6px]"
-                />
-                <h3 className="font-semibold text-[21px] text-red-600 ml-[6px]">
-                  ${data.price}
-                </h3>
-                <p className="text-[16px] ml-[6px]">{data.p}</p>
-                <div className="flex ml-[6px]">
-                  <span className="flex mt-[6px] mb-[10px]">
-                    <Star size={15} color="red" />
-                    <Star size={15} color="red" />
-                    <Star size={15} color="red" />
-                    <Star size={15} color="red" />
-                    <Star size={15} color="red" />
-                  </span>
-                  <span className="ml-[5px]">23</span>
-                </div>
-              </Link>
+              <Image
+                src={data.photo}
+                alt="logo"
+                width={700}
+                height={100}
+                className=" flex justify-center object-fill cursor-pointer "
+              />
+              <h3 className="font-semibold text-[21px] text-red-600 ml-[6px]">
+                ${data.price}
+              </h3>
+              <p className="text-[16px] ml-[6px]">{data.p}</p>
+              <div className="flex ml-[6px]">
+                <span className="flex mt-[6px] mb-[10px]">
+                  <Star size={15} color="red" />
+                  <Star size={15} color="red" />
+                  <Star size={15} color="red" />
+                  <Star size={15} color="red" />
+                  <Star size={15} color="red" />
+                </span>
+                <span className="ml-[5px]">23</span>
+              </div>
 
               <Button
                 variant="outline"
