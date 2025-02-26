@@ -12,8 +12,13 @@ import { ChevronDown } from "lucide-react";
 import Filter from "./components/Filter";
 import Items from "./components/Items";
 // import Link from "next/link";
+{
+  /* <div className="mt-[25px] px-[20px] text-[14px] font-bold hidden md:block"> */
+}
 
 const page = () => {
+  //  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"></div>
+
   return (
     <>
       <div className="mt-[45px] px-[30px]">
@@ -23,16 +28,17 @@ const page = () => {
           CLOTHING
         </h1>
         {/* filter section */}
-        <div className="grid  grid-cols-2">
+        {/* <div className="grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-2"> */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2">
           <div>
-            <h2 className="text-[23px] font-semibold">FILTERS</h2>
+            <h2 className="text-[23px] font-semibold ">FILTERS</h2>
           </div>
           {/* dropdown filter */}
           <div className="flex justify-end">
             <p className="flex items-center mr-[10px]">
               Showing <span className="font-bold mx-[5px]"> 2,682 </span> items
             </p>
-            <div className="fx]">
+            <div className="">
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex border-2 border-gray-300 py-[5px] pl-[15px] pr-[5px]">
                   <span>Select</span>
@@ -53,10 +59,13 @@ const page = () => {
             </div>
           </div>
         </div>
-
-        <div className="grid grid-cols-5 gap-4">
+        {/* div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"></div> */}
+        {/* <div className="grid grid-cols-5 gap-4"> */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {/* filter components  */}
-          <Filter />
+          <div className="sm:flex sm:justify-center">
+            <Filter />
+          </div>
 
           <div className="col-span-4  h-full w-full">
             {/* <Link href="/category/1">
