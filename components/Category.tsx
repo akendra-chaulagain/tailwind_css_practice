@@ -1,12 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ResposnsiveBar from "@/components/resposnsiveBar";
 
 const Category = () => {
   return (
-    // <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      // <div className="mt-[25px] px-[20px] text-[14px] font-bold  sm:hidden lg:block">
+
 
     <>
+      <div className=" lg:hidden">
+        <ResposnsiveBar />
+      </div>
+
       <span className="flex justify-center mt-[20px] text-red-700">
         Discount will appear in shopping bag. Exclusions apply
       </span>

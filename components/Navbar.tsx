@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       {/* <div className="mt-[25px] px-[20px] text-[14px] font-bold hidden md:block"> */}
-      <div className="mt-[25px] px-[20px] text-[14px] font-bold hidden md:block">
+      <div className="mt-[25px] px-[20px] text-[14px] font-bold hidden  sm:hidden lg:block">
         <ul className="flex justify-between">
           <Link
             href="/"

@@ -3,8 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Navbar from "@/components/Navbar";
+
 // import Logobar from "@/components/Logobar";
-// import Navbar from "@/components/Navbar";
 // import Topbar from "@/components/Topbar";
 
 const geistSans = Geist({
@@ -33,8 +34,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* <Topbar />
-        <Logobar />
-        <Navbar /> */}
+        <Logobar /> */}
+        <Navbar />
         {children}
       </body>
     </html>
