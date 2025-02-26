@@ -4,12 +4,14 @@ import React from "react";
 
 const Category = () => {
   return (
+    // <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+
     <>
       <span className="flex justify-center mt-[20px] text-red-700">
         Discount will appear in shopping bag. Exclusions apply
       </span>
 
-      <div className="grid md:grid-cols-4  text-[16px] mt-[35px]   ">
+      <div className="grid grid-cols-4  text-[16px] mt-[35px]    ">
         {/* LEFY SIDE CATEGORY */}
         <div className="">
           <div className="relative text-center ">
