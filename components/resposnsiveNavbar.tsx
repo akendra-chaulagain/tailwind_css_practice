@@ -1,7 +1,7 @@
 import React from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
-import { MapPin, Menu, ShoppingCart, User } from "lucide-react";
+import { MapPin, Menu, Search, ShoppingCart, User } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -81,6 +81,21 @@ const resposnsiveBar = () => {
             </div>
           </div>
         </SheetTrigger>
+
+        {/* search bar */}
+
+        <div className="relative mt-[10px]">
+          <span>
+            <input
+              type="text"
+              placeholder="Enter text..."
+              className="pr-8 pl-4 py-2 border  w-full outline-none"
+            />
+          </span>
+          <span className="absolute inset-y-0 right-2 flex items-center ">
+            <Search />
+          </span>
+        </div>
 
         <SheetContent>
           <div>

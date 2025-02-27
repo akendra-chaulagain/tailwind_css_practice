@@ -6,9 +6,7 @@ import ResposnsiveBar from "@/components/resposnsiveNavbar";
 const Category = () => {
   return (
     <>
-   
-        <ResposnsiveBar />
-      
+      <ResposnsiveBar />
 
       {/* for bi display bigger than 1024px */}
 
