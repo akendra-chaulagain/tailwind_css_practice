@@ -3,8 +3,9 @@ import React from "react";
 
 const Topbar = () => {
   return (
+    // hidden  sm:hidden lg:block
     <>
-      <div className=" bg-black h-auto  w-auto text-white text-[14px]  ">
+      <div className=" bg-black h-auto  w-auto text-white text-[14px]   hidden  sm:hidden lg:block">
         <div className="flex justify-center items-center p-1.5">
           <div className="cursor-pointer pr-[14px]">
             25% DISCOUNT ON SCOTIA CREDIT CARD!

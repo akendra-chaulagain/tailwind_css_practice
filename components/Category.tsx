@@ -6,8 +6,7 @@ import ResposnsiveBar from "@/components/resposnsiveNavbar";
 const Category = () => {
   return (
     <>
-      {/* responsive bar */}
-      {/* <div className=" lg:hidden bg-red-800"> */}
+   
         <ResposnsiveBar />
       
 

@@ -6,7 +6,7 @@ import Link from "next/link";
 const Logobar = () => {
   return (
     <>
-      <div className=" h-auto mt-[25px] px-[10px]">
+      <div className=" h-auto mt-[25px] px-[10px]  hidden  sm:hidden lg:block">
         <div className="grid grid-cols-3 gap-2 text-[15px]  text-gray-700">
           <div className="  ">
             {/* location */}
@@ -58,13 +58,13 @@ const Logobar = () => {
                 <Search />
               </span>
             </div>
-            <Link href='/register' className="flex cursor-pointer">
+            <Link href="/register" className="flex cursor-pointer">
               <span>
                 <User />
               </span>
               <span className="ml-[7px] hover:underline">Sign in</span>
             </Link>
-            <Link href='/cart' className="flex cursor-pointer">
+            <Link href="/cart" className="flex cursor-pointer">
               <span>
                 <ShoppingCart />
               </span>

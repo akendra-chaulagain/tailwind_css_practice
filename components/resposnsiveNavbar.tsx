@@ -8,47 +8,80 @@ import Image from "next/image";
 const resposnsiveBar = () => {
   return (
     <>
+      {/* offer on top of the screen  */}
+
+      <div className=" bg-black h-auto  w-auto text-white text-[14px]  lg:hidden">
+        {/* <div className="flex justify-center items-center p-1.5 sm:flex sm:justify-start"> */}
+        <div className=" items-center sm:flex sm:justify-center md:flex md:justify-center grid  justify-center p-1.5">
+          <div className="cursor-pointer pr-[14px] ">
+            25% DISCOUNT ON SCOTIA CREDIT CARD!
+          </div>
+          <div className=" flex justify-center cursor-pointer text-[#c1c1c1]">
+            <Link
+              href="/category"
+              className="underline mr-[7px] hover:text-white"
+            >
+              SHOP NOW
+            </Link>
+            <span className="mr-[7px] ">|</span>
+            <Link href="/category/1" className="underline hover:text-white">
+              DETAILS
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <Sheet>
-        <SheetTrigger className="grid grid-cols-7 items-center bg-slate-300">
-          {/* menu button */}
-          <Menu size={30} />
+        <SheetTrigger className="w-full lg:hidden mt-[10px] ml-[6px] ">
+          {/* <SheetTrigger className="grid grid-cols-7 items-center lg:hidden"> */}
+          <div className="grid grid-cols-7 items-center">
+            {/* menu button */}
+            <Menu size={30} />
 
-          {/* location icon */}
-          <div className="cursor-pointer">
-            <MapPin />
-          </div>
-          {/* logo */}
-          <div className=" col-span-3">
-            <Link href={"/"}>
-              {" "}
-              <Image
-                src="/images/logo.svg"
-                alt="logo"
-                width={130}
-                height={50}
-                className="cursor-pointer mr-[10px]"
-              />
-            </Link>
-          </div>
+            {/* location icon */}
+            <div className="flex justify-start cursor-pointer">
+              <MapPin />
+            </div>
+            {/* logo */}
+            <div className=" col-span-3">
+              <Link href={"/"}>
+                {" "}
+                <Image
+                  src="/images/logo.svg"
+                  alt="logo"
+                  width={180}
+                  height={60}
+                  className="flex justify-center cursor-pointer"
+                />
+              </Link>
+            </div>
 
-          {/* login icons */}
-          <div>
-            <Link href="/register" className=" cursor-pointer">
-              <span>
-                <User />
-              </span>
-            </Link>
-          </div>
-          {/* cart */}
-          <div>
-            <Link href="/register" className="flex cursor-pointer">
-              <span>
-                <ShoppingCart />
-              </span>
-              <span className="ml-[7px] hover:underline">(0)</span>
-            </Link>
+            {/* login icons */}
+            <div>
+              <Link
+                href="/register"
+                className="flex justify-end cursor-pointer"
+              >
+                <span>
+                  <User />
+                </span>
+              </Link>
+            </div>
+            {/* cart */}
+            <div>
+              <Link
+                href="/register"
+                className="flex justify-end cursor-pointer"
+              >
+                <span>
+                  <ShoppingCart />
+                </span>
+                <span className="ml-[7px] hover:underline">(0)</span>
+              </Link>
+            </div>
           </div>
         </SheetTrigger>
+
         <SheetContent>
           <div>
             <h1 className="text-[17px] font-bold mb-[10px]">MENU</h1>
