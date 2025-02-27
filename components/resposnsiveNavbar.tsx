@@ -32,7 +32,7 @@ const resposnsiveBar = () => {
       </div>
 
       <Sheet>
-        <SheetTrigger className="w-full lg:hidden mt-[10px] ml-[6px] ">
+        <SheetTrigger className="w-full lg:hidden mt-[10px] pr-[6px] pl-[6px] ">
           {/* <SheetTrigger className="grid grid-cols-7 items-center lg:hidden"> */}
           <div className="grid grid-cols-7 items-center">
             {/* menu button */}
@@ -76,7 +76,7 @@ const resposnsiveBar = () => {
                 <span>
                   <ShoppingCart />
                 </span>
-                <span className="ml-[7px] hover:underline">(0)</span>
+                <span className="mr-[7px] hover:underline">(0)</span>
               </Link>
             </div>
           </div>
