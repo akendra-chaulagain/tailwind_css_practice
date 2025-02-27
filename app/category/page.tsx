@@ -1,5 +1,5 @@
-import React from "react";
 
+import React from "react";
 import Filter from "./components/Filter";
 import Items from "./components/Items";
 // import Link from "next/link";

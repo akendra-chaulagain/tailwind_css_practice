@@ -11,7 +11,7 @@ const resposnsiveBar = () => {
       {/* offer on top of the screen  */}
 
       <div className=" bg-black h-auto  w-auto text-white text-[14px]  lg:hidden">
-        {/* <div className="flex justify-center items-center p-1.5 sm:flex sm:justify-start"> */}
+        {/* <div className="flex justify -center items-center p-1.5 sm:flex sm:justify-start"> */}
         <div className=" items-center sm:flex sm:justify-center md:flex md:justify-center grid  justify-center p-1.5">
           <div className="cursor-pointer pr-[14px] ">
             25% DISCOUNT ON SCOTIA CREDIT CARD!
@@ -84,7 +84,7 @@ const resposnsiveBar = () => {
 
         {/* search bar */}
 
-        <div className="relative mt-[10px]">
+        <div className="relative mt-[10px] lg:hidden ">
           <span>
             <input
               type="text"

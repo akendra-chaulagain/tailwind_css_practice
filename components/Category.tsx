@@ -9,96 +9,41 @@ const Category = () => {
       <ResposnsiveBar />
 
       {/* for bi display bigger than 1024px */}
-
       <span className="flex justify-center mt-[20px] text-red-700">
         Discount will appear in shopping bag. Exclusions apply
       </span>
 
-      <div className="grid grid-cols-4  text-[16px] mt-[35px]    ">
+      <div className=" text-[16px] mt-[35px] ">
+        <div className=" flex justify-center   h-[35vh] sm:grid-cols-1  lg:h-[83vh] lg:grid lg:grid-cols-2 bg-[#F2F3F5] ">
+          <div className="hidden sm:hidden lg:block">
+            <Link href={"/category"}>
+              <Image
+                src="/bg.png"
+                alt="h1"
+                width={600}
+                height={100}
+                className=" w-full object-fill h-[83vh]"
+              />
+            </Link>
+          </div>
+          <div className="flex items-center ">
+            <div>
+              <h1 className="text-[30px] font-bold text-gray-600 mb-[10px] ">
+                NEW ARRIVALS ARE HERE
+              </h1>
+              <div className="flex justify-center">
+                <Link
+                  href="/category"
+                  className="  px-[30px] py-[4px]  bg-red-600 hover:bg-white text-white hover:text-red-600"
+                >
+                  SHOP NOW
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* LEFY SIDE CATEGORY */}
-        <div className="">
-          <div className="relative text-center ">
-            <Link href={"/category"}>
-              <Image
-                src="/images/homeCategory/h1.webp"
-                alt="h1"
-                width={400}
-                height={400}
-                className="md:mw-0"
-              />
-
-              <button className="absolute translate-x-[-50%] translate-y-[-50%] left-1/2 top-1/2 bg-slate-200 px-[10px] py-[3px] opacity-90 hover:bg-white">
-                SHIRTS
-              </button>
-            </Link>
-          </div>
-          <div className="relative text-center">
-            <Link href={"/category"}>
-              <Image
-                src="/images/homeCategory/h2.jpg"
-                alt="h1"
-                width={400}
-                height={400}
-              />
-
-              <button className="absolute translate-x-[-50%] translate-y-[-50%] left-1/2 top-1/2 bg-slate-200 px-[10px] py-[3px] opacity-90 hover:bg-white">
-                SWEATERS
-              </button>
-            </Link>
-          </div>
-        </div>
-
-        {/* MIDDLE SIDE CATEGORY PHOTO */}
-        <div className="col-span-2  ">
-          <div className="relative text-center  overflow-hidden">
-            <Link href={"/category"}>
-              <Image
-                src="/images/homeCategory/h7.webp"
-                alt="h3"
-                width={1000}
-                height={1000}
-                className=" h-[88.7vh]  object-cover"
-              />
-
-              <button className="absolute translate-x-[-50%] left-1/2 top-1/2 bg-slate-200 px-[10px] py-[3px] opacity-90 hover:bg-white">
-                SHOP NOW
-              </button>
-            </Link>
-          </div>
-        </div>
-
-        {/* right part */}
-
-        <div className="">
-          <div className="relative text-center">
-            <Link href={"/category"}>
-              <Image
-                src="/images/homeCategory/h4.jpg"
-                alt="h1"
-                width={400}
-                height={400}
-              />
-
-              <button className="absolute translate-x-[-50%] translate-y-[-50%] left-1/2 top-1/2 bg-slate-200 px-[10px] py-[3px] opacity-90 hover:bg-white">
-                PANTS
-              </button>
-            </Link>
-          </div>
-          <div className="relative text-center">
-            <Link href={"/category"}>
-              <Image
-                src="/images/homeCategory/h5.webp"
-                alt="h1"
-                width={400}
-                height={400}
-              />
-
-              <button className="absolute translate-x-[-50%] translate-y-[-50%] left-1/2 top-1/2 bg-slate-200 px-[10px] py-[3px] opacity-90 hover:bg-white">
-                TEES AND KNITS
-              </button>
-            </Link>
-          </div>
-        </div>
       </div>
     </>
   );
